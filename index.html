@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>earth</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script type='text/javascript' src='js/d3.v3.min.js'></script>
+  <script type='text/javascript' src='js/topojson.v1.min.js'></script>
+  <script type='text/javascript' src='js/planetaryjs.min.js'></script>
+  <script type='text/javascript' src='js/jquery.min.js'></script>
+</head>
+<body background='images/background-white.png'>
+  <div>
+    <div style="position:absolute;z-index:0;aligen:center;width:100%;height:100%;">
+      <canvas id='globe' width='1366' height='667'></canvas>
+    </div>
+    <div style="position:absolute;z-index:-1;opacity:0.5;">
+      <ul id="ip" class="list-group" style="width:180" bgcolor="#001120">
+      </ul>
+    </div>
+    <div style="position:absolute;z-index:-1;opacity:0.5;right:0;">
+      <ul id="address" class="list-group" style="width:180;" bgcolor="#001120">
+      </ul>
+    </div>
+  </div>
+  <div class="alert alert-warning alert-dismissible" style="position:absolute;z-index:1;bottom:0;" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>Tips</strong> 按空格键可以使视角固定在中国上方。
+  </div>
+  <script type='text/javascript' src='js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='js/main.js'></script>
+</body>
+</html>
